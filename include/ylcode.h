@@ -2,7 +2,7 @@
 
 #include <cstddef>
 #include <string>
-#include "yyparse.hh"
+#include "yyparse.h"
 #ifndef FLEX_SCANNER
 #include "yylex.h"
 #endif

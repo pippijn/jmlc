@@ -5,7 +5,18 @@ project {
 
 	config_header: "config.h"
 
-	lang: C
+	lang: "C++"
 
-	output { "Makefile" }
+	ac_prog {
+		li { CXX }
+		li { YACC }
+	}
+
+	am_prog {
+		li { LEX }
+	}
+
+	output {
+		li { "Makefile" }
+	}
 }

@@ -1,3 +1,7 @@
+include automake/init.am
+
+AM_YFLAGS += -d
+
 include include/Rules.am
 include src/Rules.am
 include testsuite/Rules.am
