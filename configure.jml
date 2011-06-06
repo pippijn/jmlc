@@ -1,0 +1,11 @@
+project {
+	name: "Project"
+	version: "0.1"
+	contact: "project@xinutec.org"
+
+	config_header: "config.h"
+
+	lang: C
+
+	output { "Makefile" }
+}

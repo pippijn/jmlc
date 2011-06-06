@@ -1,0 +1,3 @@
+include include/Rules.am
+include src/Rules.am
+include testsuite/Rules.am
