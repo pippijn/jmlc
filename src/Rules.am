@@ -10,6 +10,7 @@ LOCAL_SOURCES =		\
 	yyparse.yy
 
 BUILT_SOURCES += yylex.cc yyparse.cc
+EXTRA_DIST += yylex.h
 
 yylex.cc: $(CURDIR)/yylex.ll
 	$(AM_V_LEX)flex -o$@ $<

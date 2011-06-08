@@ -1,3 +1,5 @@
+#include "config.h"
+
 #include <clocale>
 #include <cstdlib>
 
@@ -10,6 +12,18 @@ main (int argc, char *argv[])
 {
   if (argc < 2)
     return EXIT_FAILURE;
+
+  if (!strcmp (argv[1], "--version"))
+    {
+      puts (PACKAGE_NAME " v" PACKAGE_VERSION);
+      return EXIT_SUCCESS;
+    }
+
+  if (!strcmp (argv[1], "--help"))
+    {
+      puts ("usage: jmlc <jmlfile>");
+      return EXIT_SUCCESS;
+    }
 
   setlocale (LC_ALL, "");
 

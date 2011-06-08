@@ -1,19 +1,15 @@
 project {
-	name: "Project"
+	name: "JML Translator"
 	version: "0.1"
-	contact: "project@xinutec.org"
-
-	config_header: "config.h"
+	contact: "jmlc@xinutec.org"
 
 	lang: "C++"
 
-	ac_prog {
-		li { CXX }
-		li { YACC }
-	}
+	libtool: no
 
-	am_prog {
+	ac_prog {
 		li { LEX }
+		li { YACC }
 	}
 
 	output {

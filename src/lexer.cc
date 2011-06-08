@@ -153,6 +153,7 @@ parse_string (std::string *&string, char const *text, int leng)
 	    printf ("found unescaped doublce quote in string:\n%s\n%*c\n", text, it - wcs.begin () + 1, '^');
 	    abort ();
 	  }
+        s << out (c);
         break;
       case L'\'':
 	if (*text == '\'')
@@ -160,6 +161,7 @@ parse_string (std::string *&string, char const *text, int leng)
 	    printf ("found unescaped single quote in string:\n%s\n%*c\n", text, it - wcs.begin () + 1, '^');
 	    abort ();
 	  }
+        s << out (c);
         break;
       default:
         s << out (c);

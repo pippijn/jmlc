@@ -128,7 +128,10 @@ xmlvisitor::visit (nodes::element const *n)
 void
 xmlvisitor::visit (nodes::attribute const *n)
 {
-  os << ' ' << n->identifier << "=\"" << n->string << '"';
+  if (n->string.find ('"') != std::string::npos)
+    os << ' ' << n->identifier << "='" << n->string << '\'';
+  else
+    os << ' ' << n->identifier << "=\"" << n->string << '"';
 }
 
 void

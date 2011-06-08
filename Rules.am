@@ -2,6 +2,9 @@ include automake/init.am
 
 AM_YFLAGS += -d
 
+EXTRA_DIST += xml2jml
+bin_SCRIPTS += xml2jml
+
 include include/Rules.am
 include src/Rules.am
 include testsuite/Rules.am
