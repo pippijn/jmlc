@@ -12,7 +12,5 @@ project {
 		li { YACC }
 	}
 
-	output {
-		li { "Makefile" }
-	}
+	output { }
 }
