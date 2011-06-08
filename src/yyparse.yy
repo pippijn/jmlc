@@ -51,6 +51,8 @@ node
 element
 	: TOK_IDENTIFIER '{' node_list '}'
 				{ $$ = self->element (*$1, $3); }
+	| TOK_IDENTIFIER ';'
+				{ $$ = self->element (*$1, self->node_list ()); }
 	;
 
 attribute

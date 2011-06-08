@@ -12,5 +12,5 @@ project {
 		li { YACC }
 	}
 
-	output { }
+	output;
 }
