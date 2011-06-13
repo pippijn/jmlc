@@ -1,8 +1,8 @@
 bin_PROGRAMS += jmlc
 
 LOCAL_SOURCES =		\
-	jmlc.cc		\
 	lexer.cc	\
+	main.cc		\
 	node.cc		\
 	parser.cc	\
 	xmlvisitor.cc	\
