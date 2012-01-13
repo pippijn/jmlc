@@ -150,7 +150,7 @@ parse_string (std::string *&string, char const *text, int leng)
       case L'"':
 	if (*text == '"')
 	  {
-	    printf ("found unescaped doublce quote in string:\n%s\n%*c\n", text, it - wcs.begin () + 1, '^');
+	    printf ("found unescaped double quote in string:\n%s\n%*c\n", text, it - wcs.begin () + 1, '^');
 	    abort ();
 	  }
         s << out (c);
