@@ -1,0 +1,22 @@
+extern "flex"
+
+clean: {
+	rm -f yylex.h yylex.cc
+}
+
+program jmlc {
+	sources {
+		lexer.cc
+		main.cc
+		node.cc
+		parser.cc
+		xmlvisitor.cc
+		yylex.ll
+		yyparse.yy
+	}
+
+	built_sources {
+		yylex.h
+		yyparse.h
+	}
+}

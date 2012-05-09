@@ -12,14 +12,19 @@
 /configure
 /INSTALL
 /m4
-/configure.ac
-Makefile.am
-Makefile.in
+
+# MakePP generated
+#/configure.ac # not yet
+/Makefile.am
+/Makefile.in
+
+# Clang completion
+/.clang_complete
 
 # Work in progress, not for git
 /wip
 
 # Other version control systems
+CVS
 .cvsignore
 .svn
-CVS

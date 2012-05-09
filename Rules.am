@@ -1,8 +1,1 @@
-include automake/init.am
-
-AM_YFLAGS += -d
-
-EXTRA_DIST += xml2jml
-bin_SCRIPTS += xml2jml
-
-include automake/stdinc.am
+EXTRA_DIST += configure.jml

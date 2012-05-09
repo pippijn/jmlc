@@ -19,7 +19,6 @@
 %}
 
 %option prefix="yy"
-%option header-file="yylex.h"
 %option bison-locations
 %option reentrant
 %option yylineno
