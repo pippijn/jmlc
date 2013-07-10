@@ -1,0 +1,16 @@
+project {
+	name: "JML Translator"
+	version: "0.1"
+	contact: "jmlc@xinutec.org"
+
+	lang: "C++"
+
+	libtool: no
+
+	ac_prog {
+		li { LEX }
+		li { YACC }
+	}
+
+	output;
+}

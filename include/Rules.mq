@@ -1,0 +1,9 @@
+extra_dist {
+	lexer.h
+	node.h
+	parser.h
+	visitor.h
+	xmlvisitor.h
+	y.tab.h
+	ylcode.h
+}

@@ -1,0 +1,10 @@
+log_compiler {
+	.jml: {
+		$(srcdir)/testsuite/runtest $(builddir)/jmlc$(EXEEXT)
+	}
+}
+
+test { jml/*.jml }
+extra_dist { jml/*.jml }
+
+extra_dist { runtest }
