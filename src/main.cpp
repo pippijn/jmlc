@@ -1,5 +1,3 @@
-#include "config.h"
-
 #include <clocale>
 #include <cstdlib>
 
@@ -15,7 +13,7 @@ main (int argc, char *argv[])
 
   if (!strcmp (argv[1], "--version"))
     {
-      puts (PACKAGE_NAME " v" PACKAGE_VERSION);
+      puts ("jmlc v0.1");
       return EXIT_SUCCESS;
     }
 

@@ -1,7 +1,0 @@
-yflags { -d }
-
-extra_dist { extra/xml2jml }
-scripts { extra/xml2jml }
-
-extern "yacc"
-extern "c++"

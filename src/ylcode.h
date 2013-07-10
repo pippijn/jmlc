@@ -5,9 +5,9 @@
 
 struct parser;
 
-#include "yyparse.h"
+#include "yyparse.hpp"
 #ifndef FLEX_SCANNER
-#include "yylex.h"
+#include "yylex.hpp"
 #endif
 
 void yyerror (YYLTYPE const *llocp, parser *parse, char const *msg);
