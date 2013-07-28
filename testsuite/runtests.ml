@@ -3,10 +3,9 @@
 (* +=====~~~-------------------------------------------------------~~~=====+ *)
 
 TestFramework.(run "testsuite" [
-  {
+  { empty with
     tool = "jmlc";
     suffixes = [".jml"];
-    options = None;
     dirs = [
       "jml";
     ];
