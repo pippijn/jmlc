@@ -1,3 +1,0 @@
-=head1 JML Translator
-
-L<Git repository|http://xinutec.org/git/lang/jmlc.git>
