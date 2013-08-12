@@ -1,3 +1,42 @@
 =head1 JML Translator
 
 L<Git repository|https://github.com/pippijn/jmlc>
+
+JML is an alternative syntax for XML. It aims to supports every feature of XML,
+but in a curly brace syntax. Unlike XML, JML allows a mix of attributes and
+content nodes.
+
+=begin code jml
+
+  window {
+     id: "rootWnd"
+     title: "Register Online!"
+
+     description { "Register Online!" }
+     vbox {
+        description { "Register Online!" }
+        hbox {
+           image { src: "wall-create-account-button.png" }
+           description { "Register Online!" }
+        }
+     }
+  }
+
+=end code
+
+The above code becomes:
+
+=begin code xml
+
+  <window id="rootWnd" title="Register Online!">
+    <description>Register Online!</description>
+    <vbox>
+      <description>Register Online!</description>
+      <hbox>
+        <image src="wall-create-account-button.png"></image>
+        <description>Register Online!</description>
+      </hbox>
+    </vbox>
+  </window>
+
+=end code
