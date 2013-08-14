@@ -1,10 +1,10 @@
 =head1 JML Translator
 
-L<Git repository|https://github.com/pippijn/jmlc>
-
 JML is an alternative syntax for XML. It aims to supports every feature of XML,
 but in a curly brace syntax. Unlike XML, JML allows a mix of attributes and
 content nodes.
+
+L<Git repository|https://github.com/pippijn/jmlc>
 
 =begin code jml
 
