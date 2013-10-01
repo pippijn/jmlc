@@ -1,4 +1,4 @@
-ocaml-jmlc (0.1) precise; urgency=low
+jmlc (0.1) precise; urgency=low
 
   * Initial release. (Closes: #9999)
 

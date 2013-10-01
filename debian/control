@@ -1,16 +1,13 @@
-Source: ocaml-jmlc
-Section: ocaml
+Source: jmlc
+Section: devel
 Priority: optional
 Maintainer: Pippijn van Steenhoven <pip88nl@gmail.com>
-Uploaders: 
-  Pippijn van Steenhoven <pip88nl@gmail.com>
 Build-Depends:
-  omake,
-  ocaml-nox (>= 3.12),
-  ocaml-findlib,
-  libbaselib-ocaml-dev,
-  dh-ocaml,
-  debhelper (>= 8.0.0)
+ debhelper (>= 8.0.0),
+ obuild,
+ libbaselib-ocaml-dev,
+ bison,
+ flex
 Standards-Version: 3.9.2
 Homepage: https://github.com/pippijn/jmlc
 Vcs-Git: git://github.com/pippijn/jmlc
@@ -18,9 +15,8 @@ Vcs-Browser: https://github.com/pippijn/jmlc
 
 Package: jmlc
 Architecture: any
-Depends: ${ocaml:Depends}, ${misc:Depends}
-Provides: ${ocaml:Provides}
-Recommends: ocaml-findlib
-Description: Common library for OCaml projects
- This library contains some common modules I use for
- most of my projects.
+Depends: ${misc:Depends}
+Description: JML to XML translator
+ JML is an alternative syntax for XML. It aims to supports every feature of
+ XML, but in a curly brace syntax. Unlike XML, JML allows a mix of attributes
+ and content nodes.
