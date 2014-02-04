@@ -1,0 +1,25 @@
+Name = jmlc
+
+C-Sources[] =
+  lexer.cpp
+  main.cpp
+  node.cpp
+  parser.cpp
+  xmlvisitor.cpp
+  yylex.lpp
+  yyparse.ypp
+
+C-Headers[] =
+  lexer.h
+  node.h
+  parser.h
+  visitor.h
+  xmlvisitor.h
+  ylcode.h
+  yyparse.hpp
+  yylex.hpp
+
+OM_YFLAGS = -d
+
+TARGET = $(program-install)
+.DEFAULT: $(TARGET)
