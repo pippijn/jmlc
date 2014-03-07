@@ -1,4 +1,4 @@
-Name = jmlc
+Name		= jmlc
 
 C-Sources[] =
   lexer.cpp
